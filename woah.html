@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Gigi ☁️</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #fde7f3, #eaf7ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 18px;
+      overflow-x: hidden;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 720px;
+      background: #ffffff;
+      padding: 26px;
+      border-radius: 30px;
+      box-shadow: 0 20px 45px rgba(180, 160, 220, 0.35);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* floating clouds */
+    .cloud {
+      position: absolute;
+      background: #ffffff;
+      border-radius: 60px;
+      opacity: 0.9;
+      animation: float 12s infinite ease-in-out;
+    }
+
+    .cloud.one {
+      width: 140px;
+      height: 50px;
+      top: 30px;
+      left: -60px;
+      animation-delay: 0s;
+    }
+
+    .cloud.two {
+      width: 190px;
+      height: 65px;
+      top: 120px;
+      right: -80px;
+      animation-delay: 3s;
+    }
+
+    .cloud.three {
+      width: 120px;
+      height: 45px;
+      bottom: 80px;
+      left: -50px;
+      animation-delay: 6s;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .header h1 {
+      color: #e89ac7;
+      font-size: 2rem;
+      margin-bottom: 6px;
+    }
+
+    .header p {
+      color: #8fbce8;
+      font-size: 1rem;
+    }
+
+    .cinn-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 22px 0;
+    }
+
+    .cinn-wrap img {
+      width: 155px;
+      max-width: 70%;
+      margin-bottom: 10px;
+    }
+
+    .bubble {
+      background: linear-gradient(135deg, #fde7f3, #eaf7ff);
+      color: #6f8fbf;
+      padding: 14px 18px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      text-align: center;
+      max-width: 90%;
+      position: relative;
+    }
+
+    .bubble::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 8px 8px 0 8px;
+      border-style: solid;
+      border-color: #fde7f3 transparent transparent transparent;
+    }
+
+    .message {
+      color: #555;
+      line-height: 1.95;
+      font-size: 1.05rem;
+      margin-top: 15px;
+    }
+
+    .message span {
+      color: #e89ac7;
+      font-weight: 600;
+    }
+
+    .end {
+      margin-top: 30px;
+    }
+
+    .footer {
+      margin-top: 25px;
+      text-align: center;
+      color: #8fbce8;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 1.7rem;
+      }
+
+      .message {
+        font-size: 1rem;
+      }
+
+      .cinn-wrap img {
+        width: 135px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="cloud one"></div>
+    <div class="cloud two"></div>
+    <div class="cloud three"></div>
+
+    <div class="header">
+      <h1>Hi Gigi ☁️</h1>
+      <p>this is something I’ve been wanting to say</p>
+    </div>
+
+    <div class="cinn-wrap">
+      <img src="cinna2.jpg">
+      <div class="bubble">
+        Cinnamoroll says:<br>
+        “This message is really important 🩵”
+      </div>
+    </div>
+
+    <div class="message">
+      I’ve been wanting to say this for a while na, and I figured the best way to do this is just this.<br><br>
+
+      I really, really <span>adore you</span>. There’s something about you that quietly stands out in the most beautiful way.
+      Your eyes are literally super super duper so pretty, they have this thing na where it instantly makes everything feel
+      lighter when I see them. Not to even forget your smile??? It’s one of the cutest things I have ever seen, the kind that
+      stays in my head longer than it probably should.<br><br>
+
+      ALSO I <span>LOVEEE</span> how your glasses fit you so perfectly. They don’t just suit you yk, they feel like you.
+      SAKA yung mga outfits on your ig posts? The tita vibes are so, so adorable.
+      There’s just really something so charming about you. It makes you even more attractive, more cute in a way na parang
+      ang hirap iexplain but impossible not to notice.<br><br>
+
+      I made this not expecting anything. I just wanted you to know that someone sees you, admires you, and appreciates all
+      these little details that make you <span>you</span>. You genuinely make my life better just by being yourself.
+    </div>
+
+    <div class="cinn-wrap end">
+      <img src="cinna1.jpg">
+      <div class="bubble">
+        “Thank you for being you ☁️💗”
+      </div>
+    </div>
+
+    <div class="footer">
+      THAT’S ALL ☁️ BYE BYE
+    </div>
+  </div>
+
+</body>
+</html>
